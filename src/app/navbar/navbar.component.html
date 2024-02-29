@@ -4,9 +4,10 @@
 	</div>
 	<div class="nav-links">
 		@if (authService.isLoggedIn()){
-		<button (click)="logout()">Logout</button>
+		  <button (click)="logout()">Logout</button>
 		}@else {
-		<a routerLink="/login">Login</a>
+		  <a routerLink="/login">Login</a>
+      <a routerLink="/signup">Sign Up</a>
 		}
 	</div>
 </nav>
